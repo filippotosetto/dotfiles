@@ -1,0 +1,59 @@
+[user]
+	name = Filippo Tosetto
+	email = filippo.tosetto@gmail.com
+[core]
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
+
+[alias]
+	s = status
+	#############
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	#############
+	a = add .
+	#############
+	l = log --oneline
+	lg = log --oneline --graph --decorate
+	#############
+	o = checkout
+	ob = checkout -b
+	#############
+	b = branch
+	ba = branch -a
+	bd = branch -d
+	br = branch -r
+	#############
+	f = fetch
+	fo = fetch origin
+	#############
+	ps = push
+	pso = push origin
+	#############
+	pl = pull
+	plo = pull origin
+	#############
+	
+[color]
+	ui = always
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
