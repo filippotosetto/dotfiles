@@ -54,3 +54,6 @@ function parse_git_branch() {
 export PS1="\[$ORANGE\h \[$MAGENTA\]in \[$GREEN\]\w\[$MAGENTA\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$GREEN\]\$ \[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
 
+# Xcode developer dir
+export DEVELOPER_DIR='/Applications/Xcode.app/Contents/Developer'
+

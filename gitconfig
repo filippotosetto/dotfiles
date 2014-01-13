@@ -32,6 +32,8 @@
 	#############
 	ps = push
 	pso = push origin
+	develop = push origin develop
+	master = push origin master
 	#############
 	pl = pull
 	plo = pull origin
@@ -57,3 +59,5 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[push]
+	default = simple
