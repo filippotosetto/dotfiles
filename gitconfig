@@ -1,13 +1,13 @@
 [user]
-	name = Filippo Tosetto
+	name = filippo.tosetto@gmail.com
 	email = filippo.tosetto@gmail.com
 [core]
-	editor = vim
+	editor = atom
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/filippo/.gitignore
 
 [alias]
-	s = status
+	s = status -sb
 	#############
 	c = commit
 	ca = commit -a
@@ -38,7 +38,8 @@
 	pl = pull
 	plo = pull origin
 	#############
-	
+	st = status -sb
+
 [color]
 	ui = always
 [color "branch"]
@@ -61,3 +62,19 @@
 	prompt = false
 [push]
 	default = simple
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

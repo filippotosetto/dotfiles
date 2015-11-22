@@ -19,7 +19,6 @@ profile
 *.perspectivev3
 *.pyc 
 *~.nib/
-*/build/*
 *.xcuserstate
 project.xcworkspace/
 */UserInterfaceState.xcuserstate
@@ -43,7 +42,6 @@ DerivedData
 *.hmap
 
 # Android and iOS
-build/
 
 # Java (Android) Related
 project.properties

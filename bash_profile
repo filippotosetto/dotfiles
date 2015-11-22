@@ -3,11 +3,14 @@ export PATH="$HOME/bin:$PATH"
 
 export GRADLE_HOME="/Users/filippo/Development/gradle"
 export PATH=$PATH:$GRADLE_HOME/bin
+export PATH=$PATH:/usr/local/bin
+export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cacert.pem
 
-source ~/.profile
+
+# source ~/.profile
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
+# * ~/.extra can be used for other settings you donât want to commit.
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
@@ -44,3 +47,14 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+export SSL_CERT_FILE=/usr/local/etc/openssl/ca-cert.pem
+
+function parse_git_branch() {
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}

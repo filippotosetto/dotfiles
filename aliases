@@ -37,3 +37,7 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && 
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 alias symbolicatecrash='/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/symbolicatecrash'
+
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+alias peerflix_s='/Users/filippo/Private/Peerflix/Build/Peerflix'
