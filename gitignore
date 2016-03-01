@@ -15,9 +15,9 @@ profile
 *.xcodeproj/*.tm_build_errors
 *.mode1v3
 *.pbxuser
-*.perspective 
+*.perspective
 *.perspectivev3
-*.pyc 
+*.pyc
 *~.nib/
 *.xcuserstate
 project.xcworkspace/
@@ -25,7 +25,7 @@ project.xcworkspace/
 */Breakpoints.xcbkptlist
 xcuserdata/
 */xcuserdata/*
-.xcodeproj/ 
+.xcodeproj/
 *.pbxuser
 *.perspective
 *.perspectivev3
@@ -40,6 +40,12 @@ profile
 *.moved-aside
 DerivedData
 *.hmap
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
 
 # Android and iOS
 

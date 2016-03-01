@@ -58,3 +58,4 @@ export SSL_CERT_FILE=/usr/local/etc/openssl/ca-cert.pem
 function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
