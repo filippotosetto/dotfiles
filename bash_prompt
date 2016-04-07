@@ -56,4 +56,3 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 # Xcode developer dir
 export DEVELOPER_DIR='/Applications/Xcode.app/Contents/Developer'
-
